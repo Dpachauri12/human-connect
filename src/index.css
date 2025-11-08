@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+html, body, #root { height: 100%; }
+body { @apply font-sans text-white; background-image: theme('backgroundImage.ez'); background-attachment: fixed; }
+
+.container-ez { @apply max-w-6xl mx-auto px-5; }
+
+.card { @apply rounded-2xl border border-white/15 bg-card backdrop-blur shadow-soft; }
+
+.btn { @apply inline-flex items-center justify-center rounded-xl px-5 py-2.5 font-medium transition; }
+.btn-primary { @apply bg-accent-500 hover:bg-accent-600 text-white shadow-glow; }
+.btn-muted { @apply bg-white/10 hover:bg-white/15 border border-white/15; }
+
+.input { @apply w-full rounded-xl border border-white/20 bg-white/5 px-4 py-3 outline-none text-white placeholder-white/60 focus:border-accent-500 focus:ring-2 focus:ring-accent-500/30; }
+.label { @apply block mb-2 text-white/90; }
+
+.badge { @apply text-xs px-3 py-1 rounded-full bg-white/10 border border-white/15; }
+
+/* Animations */
+.fade-in { animation: fade .6s ease both; }
+@keyframes fade { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: translateY(0) } }
+
+.zoom { @apply transition; }
+.zoom:hover { transform: scale(1.02); }
+
+.hero-overlay { @apply absolute inset-0 bg-black/30 rounded-2xl; }
