@@ -33,6 +33,10 @@ It’s not just a contact form — it’s a small example of how thoughtful desi
 | **Netlify / Vercel** | Deployment ready |
 
 ---
+🌍 Live Demo
+
+🔗 View Live Project
+---
 
 ## 📩 API Integration
 
